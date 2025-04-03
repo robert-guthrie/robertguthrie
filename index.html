@@ -35,9 +35,16 @@
         <br>
         <br>
 
-        <audio autoplay loop hidden>
-            <source src="audio/DR000183 egyptian geese at Surrey Quays 2.mp3" type="audio/mpeg">
-        </audio>
+        <audio id="background-audio" loop hidden>
+    <source src="audio/DR000183 egyptian geese at Surrey Quays 2.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    window.addEventListener('click', function() {
+        const audio = document.getElementById('background-audio');
+        audio.play();
+    });
+</script>
       </body>
        
        
