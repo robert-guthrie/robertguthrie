@@ -1,0 +1,133 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <title>robert guthrie</title>
+  
+  <style>
+    /* Make body fill viewport and show background images fully */
+    body {
+      margin: 0;
+      padding: 20px;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; /* show whole image, no cropping */
+      background-color: white; /* fallback bg color */
+      transition: background-image ease-in-out;
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    /* Container for text so it doesn't run too wide */
+   
+  </style>
+</head>
+
+<body>
+  <a href="index.html"><h1 class= "side-header-right">robert guthrie</h1></a><br>
+
+  <div>
+    <h2>a few photos</h2>
+    <h1>robert's photo gallery</h1>
+
+    <!-- This div can be expanded for gallery or other content -->
+    <div id="gallery">
+      <!-- The background images will appear behind this content -->
+    </div>
+
+    
+  </div>
+
+  <script>
+    const imageFilenames = [
+      '_13_00401.jpg',
+      '_32_00346.jpg',
+      '20210122_133602000_iOS.jpg',
+      '20210122_133645000_iOS 1.jpg',
+      '20210122_133645000_iOS.jpg',
+      '20231115_144116000_iOS 2.jpg',
+      '20231115_144116000_iOS 5.jpg',
+      '20231115_144116000_iOS 6.jpg',
+      '20231115_144116000_iOS 10.jpg',
+      '20231115_144116000_iOS 12.jpg',
+      '20231115_144116000_iOS.jpg',
+      '20231115_161500752_iOS.jpg',
+      '20231115_161500752_iOS.jpg',
+      '20231115_161505508_iOS.jgp',
+      '20240922_215410391_iOS.png',
+      '20240928_131649955_iOS.png',
+      '000736330004.jpg',
+      '000736330014.jpg',
+      '000736330015.jpg',
+      '000736330018.jpg',
+      '000736330021.jpg',
+      '000736330027.jpg',
+      '000736330028.jpg',
+      '000736330029.jpg',
+      'c buike.png',
+      'climb 1.png',
+      'climb.png',
+      'CNV00001 3.jpg',
+      'DSC05717.JPG',
+      'DSC05840.JPG',
+      'DSC06425.JPG',
+      'DSC06541.JPG',
+      'DSC07051.JPG',
+      'DSC09823.JPG',
+      'g speed.png',
+      'IMG_8826.JPG',
+      'IMG_8829.jpg',
+      'IMG_8832.JPG',
+      'IMG_8833.jpg',
+      'IMG_8838.jpg',
+      'light trail.png',
+      'logistics.png',
+      'long n winding road.png',
+      'lorry.png',
+      'nice mountain sunrise.png',
+      'nov 2019 - 005.jpg',
+      'nov 2019 - 007.jpg',
+      'r pillows.png',
+      'r puillow.png',
+      'r s on the road.png',
+      's blur.png',
+      'seb bottle.png',
+      'seb headlights.png',
+      'sheep.png',
+      '20240617_131611000_iOS.jpg',
+      '20240529_143154133_iOS.jpg',
+      '20240529_143153412_iOS.jpg',
+      '20240529_143152213_iOS.jpg',
+      '000132460001_1A.png',
+      '000132460009_9A.png',
+      '000132460011_11A.png',
+      '000132460012_12A.jpg',
+      '000132460017_17A.png',
+      '000132460023_23A.png',
+    ];
+    const imageFolder = 'images/my gallery/';
+
+    function setRandomBackground() {
+      const randomIndex = Math.floor(Math.random() * imageFilenames.length);
+      const imageUrl = `url('${imageFolder}${imageFilenames[randomIndex]}')`;
+      document.body.style.backgroundImage = imageUrl;
+    }
+
+    // Show initial image
+    setRandomBackground();
+
+    // Change image every 2.5 seconds
+    setInterval(setRandomBackground, 2500);
+  </script>
+</body>
+</html>
