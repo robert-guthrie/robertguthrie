@@ -22,7 +22,7 @@ text-transform: ;
 
 .side-header-right {
   position: fixed;
-  right: 5%;
+  right: 5px;
   top: 15%;
   transform: rotate(90deg) translateX(-50%);
   transform-origin: left top;
@@ -41,3 +41,4 @@ letter-spacing: -0.5px;
 font-stretched: condensed;
 text-transform: ;
 }
+
