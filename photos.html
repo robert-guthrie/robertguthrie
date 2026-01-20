@@ -31,6 +31,26 @@
     /* Container for text so it doesn't run too wide */
    
   </style>
+    
+
+    
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+  <style>
+    /* Hide the SoundCloud player but keep it active */
+    #sc-player {
+       position: fixed;
+  width: 240px;
+  height: 60px;
+  bottom: 12px;
+  left: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 9999;
+    }
+  </style>
+
+
 </head>
 
 <body>
@@ -129,6 +149,31 @@
     // Change image every 2.5 seconds
     setInterval(setRandomBackground, 2500);
   </script>
-</body>
+ 
+ 
+ <iframe
+    id="sc-player"
+    src="https://w.soundcloud.com/player/?url=https://soundcloud.com/robguth/harmonics&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&visual=false"
+    allow="autoplay">
+  </iframe>
 
+  <script>
+    const iframe = document.getElementById('sc-player');
+    const player = SC.Widget(iframe);
+
+    let started = false;
+
+    window.addEventListener('click', () => {
+      if (!started) {
+        player.play();
+        started = true;
+      }
+    });
+
+    // Optional: loop the track
+    player.bind(SC.Widget.Events.FINISH, () => {
+      player.play();
+    });
+  </script>
+</body>
 </html>
