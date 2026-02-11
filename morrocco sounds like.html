@@ -1,0 +1,129 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <title>robert guthrie</title>
+  
+  <style>
+    body {
+      background-color: #faf9f6;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+padding: 40px 20px;
+            margin: 0;
+        
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .row-container {
+            margin-bottom: 40px;
+        }
+
+        .category-header {
+       
+            margin-bottom: 15px;
+            padding-left: 15px;
+        }
+
+        .audio-row {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .audio-card {
+            flex: 1; /* This forces all 5 cards to share equal width */
+            background: #1e1e1e;
+            padding: 15px 10px;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            min-width: 0; /* Prevents flex items from overflowing */
+        }
+
+        .audio-card h3 {
+            font-size: 0.75rem;
+            margin: 0 0 10px 0;
+            color: #888;
+            text-align: center;
+        }
+
+        audio {
+            width: 100%; /* Makes the player fill the narrow card */
+            height: 35px;
+        }
+
+        /* Responsive tweak: stack them if the screen is too narrow */
+        @media (max-width: 800px) {
+            .audio-row {
+                flex-wrap: wrap;
+            }
+            .audio-card {
+                flex: 1 1 30%; /* Shows roughly 3 per line on mobile */
+            }
+        }
+   
+  </style>
+    
+</head>
+
+
+<body style="
+    margin: 0;
+    background-image: url('images/Morocco/000241150030_27A.jpg');
+    background-attachment: fixed;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #faf9f6">
+  <a href="index.html"><h1 class= "side-header-right">robert guthrie</h1></a><br>
+<div>
+    <h2>morrocco sounds like...</h2>
+</div>
+  
+<div style="height: 15vh;"></div>
+  <div class="row-container">
+          <div class="category-header">highs</div>
+          <div class="audio-row">
+        <div class="audio-card"><h3>cafe</h3><audio controls loop src="audio/Morrocco sounds like/Cafe Hi.mp3"></audio></div>
+        <div class="audio-card"><h3>car</h3><audio controls loop src="audio/Morrocco sounds like/Car Hi.mp3"></audio></div>
+        <div class="audio-card"><h3>goats</h3><audio controls loop src="audio/Morrocco sounds like/Goats Hi.mp3"></audio></div>
+        <div class="audio-card"><h3>roof</h3><audio controls loop src="audio/Morrocco sounds like/Roof Hi.mp3"></audio></div>
+        <div class="audio-card"><h3>waves</h3><audio controls loop src="audio/Morrocco sounds like/Waves Hi.mp3"></audio></div>
+      </div></div>
+
+  <div class="row-container">
+          <div class="category-header">mids</div>
+          <div class="audio-row">
+        <div class="audio-card"><h3>cafe</h3><audio controls loop src="audio/Morrocco sounds like/Cafe Mid.mp3"></audio></div>
+        <div class="audio-card"><h3>car</h3><audio controls loop src="audio/Morrocco sounds like/Car Mid.mp3"></audio></div>
+        <div class="audio-card"><h3>goats</h3><audio controls loop src="audio/Morrocco sounds like/Goats Mid.mp3"></audio></div>
+        <div class="audio-card"><h3>roof</h3><audio controls loop src="audio/Morrocco sounds like/Roof Mid.mp3"></audio></div>
+        <div class="audio-card"><h3>waves</h3><audio controls loop src="audio/Morrocco sounds like/Waves mid.mp3"></audio></div>
+        </div>
+        </div>
+
+  <div class="row-container">
+          <div class="category-header">lows</div>
+          <div class="audio-row">
+        <div class="audio-card"><h3>cafe</h3><audio controls loop src="audio/Morrocco sounds like/Cafe Low.mp3"></audio></div>
+        <div class="audio-card"><h3>car</h3><audio controls loop src="audio/Morrocco sounds like/Car Low.mp3"></audio></div>
+        <div class="audio-card"><h3>goats</h3><audio controls loop src="audio/Morrocco sounds like/Goats Low.mp3"></audio></div>
+        <div class="audio-card"><h3>roof</h3><audio controls loop src="audio/Morrocco sounds like/Roof Low.mp3"></audio></div>
+        <div class="audio-card"><h3>waves</h3><audio controls loop src="audio/Morrocco sounds like/Waves Low.mp3"></audio></div>
+</div></div>
+    
+
+</body>
+</html>
